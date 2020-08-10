@@ -1,0 +1,41 @@
+﻿<Window x:Class="Draw2dForCanvas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Draw2dForCanvas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="4"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Canvas x:Name="cvs1" Grid.Column="0">
+                
+            </Canvas>
+            <GridSplitter Grid.Column="1">
+                
+            </GridSplitter>
+            <Grid Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="4"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Canvas x:Name="cvs2" Grid.Row="0">
+                    
+                </Canvas>
+                <GridSplitter Grid.Row="1">
+                    
+                </GridSplitter>
+                <Grid x:Name="grd1" Grid.Row="2">
+                    
+                </Grid>
+            </Grid>
+        </Grid>
+        
+    </DockPanel>
+</Window>
